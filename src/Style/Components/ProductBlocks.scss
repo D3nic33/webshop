@@ -1,0 +1,27 @@
+@mixin marginsides ($margin: 3rem) {
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+$block-color: gray;
+
+.product-small-block {
+  @include marginsides();
+  width: 5rem;
+  height: 10rem;
+  background-color: $block-color;
+}
+
+.product-middle-block {
+  @include marginsides();
+  width: 10rem;
+  height: 15rem;
+  background-color: $block-color;
+}
+
+.product-large-block {
+  @include marginsides();
+  width: 15rem;
+  height: 20rem;
+  background-color: $block-color;
+}
