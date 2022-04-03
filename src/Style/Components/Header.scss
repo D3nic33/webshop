@@ -1,7 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer');
 
 $font-family: 'IM Fell Great Primer';
+$font-black: #000000;
 
-.header-body{
+@mixin placediv ($place: center) {
+  width: 100%;
+  display: flex;
+  justify-content: $place;
+}
+
+.header-body {
   font-family: $font-family;
+}
+
+.header-title {
+  @include placediv();
+  text-decoration: none;
+  color: $font-black;
+  font-size: larger;
+}
+
+.header-links {
+  @include placediv();
+  margin-top: 1rem;
+  .link {
+    text-decoration: none;
+    color: $font-black;
+    font-size: large;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
 }
