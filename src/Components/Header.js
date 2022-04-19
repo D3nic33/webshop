@@ -1,19 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Style/Components/Header.scss"
 
 class Header extends React.Component {
   render(){
     return (
-      <div className="header-body">
-        <Link to="/" className="header-title">
+      <div className="flex flex-col pt-6">
+        <Link to="/" className="text-center text-2xl">
           <h1>Enicy</h1>
         </Link>
-        <div className="header-links">
-          <Link className="link" to="/women">Dames</Link>
-          <Link className="link" to="/men">Heren</Link>
-          <Link className="link" to="/kids">Kinderen</Link>
-          <Link className="link" to="/sale">Sale</Link>
+        <div className="flex flex-row justify-center py-5 text-lg">
+          <Link className="px-3" to="/women">Dames</Link>
+          <Link className="px-3" to="/men">Heren</Link>
+          <Link className="px-3" to="/kids">Kinderen</Link>
+          <Link className="px-3" to="/sale">Sale</Link>
         </div>
       </div>
     );
