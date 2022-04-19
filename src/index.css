@@ -1,4 +1,6 @@
-$background-color: #EEEBE3;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body{ 
   background-color: $background-color;
