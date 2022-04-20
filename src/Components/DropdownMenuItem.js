@@ -12,7 +12,7 @@ const DropdownMenuItem = ({linkName}) => {
       <div className="relative inline-block py-3">
         <Link className="px-5" to={linkName}>{Capitalize(linkName)}</Link>
       </div>
-      <div className="hidden absolute group-hover:block py-2 px-2 h-1/4 overflow-scroll">
+      <div className="hidden absolute group-hover:block py-2 px-2 h-1/3 overflow-scroll">
         <Link className="px-3 py-1 block" to={`${linkName}/tops`}>Tops</Link>
         <Link className="px-3 py-1 block" to="/blazers">Blazers</Link>
         <Link className="px-3 py-1 block" to="/vests-and-cardigans">Vesten en cardigans</Link>
